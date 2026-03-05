@@ -11,8 +11,6 @@ public class CalculatorFrame extends javax.swing.JFrame {
 
     public CalculatorFrame() {
         initComponents();
-        
-        // --- VĨ CODE THÊM ĐOẠN NÀY ĐỂ MÀN HÌNH CHUYÊN NGHIỆP HƠN ---
         // 1. Canh lề phải cho giống máy tính thật
         txtDisplay.setHorizontalAlignment(javax.swing.JTextField.RIGHT);
         
