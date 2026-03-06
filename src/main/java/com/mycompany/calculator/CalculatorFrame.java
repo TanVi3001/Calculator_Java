@@ -225,16 +225,48 @@ public class CalculatorFrame extends javax.swing.JFrame {
 
     private void btnClearActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnClearActionPerformed
         // TODO add your handling code here:
+        txtDisplay.setText("");
+        num1 = 0;
+        num2 = 0;
+        operator = "";
     }//GEN-LAST:event_btnClearActionPerformed
 
     private void btnEqualActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnEqualActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_btnEqualActionPerformed
 
+    //Dấu cộng
+    private void btnAddActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnAddActionPerformed
+        // TODO add your handling code here:
+        num1 = Double.parseDouble(txtDisplay.getText());
+        operator = "+";
+        txtDisplay.setText("");
+    }//GEN-LAST:event_btnAddActionPerformed
+
+    //Dấu trừ
     private void btnSubActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnSubActionPerformed
         // TODO add your handling code here:
+        num1 = Double.parseDouble(txtDisplay.getText());
+        operator = "-";
+        txtDisplay.setText("");
     }//GEN-LAST:event_btnSubActionPerformed
 
+    //Dấu nhân
+    private void btnMulActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnMulActionPerformed
+        // TODO add your handling code here:
+        num1 = Double.parseDouble(txtDisplay.getText());
+        operator = "x";
+        txtDisplay.setText("");
+    }//GEN-LAST:event_btnMulActionPerformed
+
+    //Dấu chia
+    private void btnDivActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnDivActionPerformed
+        // TODO add your handling code here:
+        num1 = Double.parseDouble(txtDisplay.getText());
+        operator = "/";
+        txtDisplay.setText("");
+    }//GEN-LAST:event_btnDivActionPerformed
+    
     private void jButton20ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton20ActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_jButton20ActionPerformed
