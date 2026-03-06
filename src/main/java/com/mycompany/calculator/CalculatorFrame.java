@@ -225,6 +225,10 @@ public class CalculatorFrame extends javax.swing.JFrame {
 
     private void btnClearActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnClearActionPerformed
         // TODO add your handling code here:
+        txtDisplay.setText("");
+        num1 = 0;
+        num2 = 0;
+        operator = "";
     }//GEN-LAST:event_btnClearActionPerformed
 
     private void btnEqualActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnEqualActionPerformed
@@ -233,6 +237,9 @@ public class CalculatorFrame extends javax.swing.JFrame {
 
     private void btnSubActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnSubActionPerformed
         // TODO add your handling code here:
+        num1 = Double.parseDouble(txtDisplay.getText());
+        operator = "-";
+        txtDisplay.setText("");
     }//GEN-LAST:event_btnSubActionPerformed
 
     private void jButton20ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton20ActionPerformed
